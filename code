@@ -1,0 +1,5 @@
+from pytube import YouTube # import library
+yt = YouTube("https://youtu.be/kXxr9A_UBG4") # your link
+mp4_files = yt.streams.filter(file_extension="mp4") # download as mp4
+mp4_369p_files = mp4_files.get_by_resolution("360p") # download with 360p
+mp4_369p_files.download("pythonProject") # where does it install
